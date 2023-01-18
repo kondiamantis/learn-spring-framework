@@ -28,12 +28,12 @@ public class CdiContextLauncherApplication {
 }
 
 //@Component
-@Named
+
 class BusinessService{
     private DataServiceClass dataService;
 
     //@Autowired
-    @Inject
+
     public void setDataService(DataServiceClass dataService) {
         System.out.println("Setter Injection");
         this.dataService = dataService;
